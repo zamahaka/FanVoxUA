@@ -1,0 +1,23 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="text_size_large">25dp</dimen>
+    <dimen name="compound_image_size">40dp</dimen>
+
+    <dimen name="user_photo_size">72dip</dimen>
+    <dimen name="profile_photo_size">96dip</dimen>
+
+    <dimen name="profile_list_item_height">64dp</dimen>
+    <dimen name="profile_list_icons_column_width">72dp</dimen>
+    <item name="profile_image_size_ratio" format="float" type="dimen">1.602362</item>
+
+    <dimen name="login_icon_margin">16dp</dimen>
+    <dimen name="login_icon_size">24dp</dimen>
+
+    <dimen name="sessions_time_column_width">90dp</dimen>
+    <dimen name="toolbar_shadow_height">4dp</dimen>
+
+    <dimen name="nav_header_height">160dp</dimen>
+
+</resources>

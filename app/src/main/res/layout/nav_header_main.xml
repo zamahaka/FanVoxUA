@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/nav_header_height"
+                android:background="@drawable/nav_img"
+                android:gravity="bottom"
+                android:orientation="vertical"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <FrameLayout
+        android:id="@+id/user_ava_frame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="16dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_user_ava"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:src="@drawable/default_ava"
+            android:visibility="visible"/>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/txt_user_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/user_ava_frame"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/user_ava_frame"
+        android:layout_centerInParent="true"
+        android:layout_toEndOf="@+id/user_ava_frame"
+        android:layout_toRightOf="@+id/user_ava_frame"
+        android:gravity="center"
+        android:shadowColor="@android:color/white"
+        android:shadowRadius="10"
+        android:text="@string/app_name"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25sp"/>
+
+    <ImageButton
+        android:id="@+id/btn_log_in_out"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignEnd="@+id/txt_user_login"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/txt_user_login"
+        android:background="?android:selectableItemBackground"
+        android:contentDescription="img_log_in_out"
+        android:cropToPadding="false"
+        android:foregroundGravity="center|center_vertical|center_horizontal"
+        android:scaleType="fitCenter"
+        android:src="@drawable/login_img"/>
+
+    <ImageButton
+        android:id="@+id/btn_user"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/btn_log_in_out"
+        android:layout_toStartOf="@+id/btn_log_in_out"
+        android:background="?android:selectableItemBackground"
+        android:contentDescription="img_user"
+        android:cropToPadding="false"
+        android:foregroundGravity="center|center_vertical|center_horizontal"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_action_user"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>
